@@ -378,4 +378,14 @@ view: irs_990_2012 {
     type: count
     drill_fields: []
   }
+  measure: calc_netinc_sales_sum {
+    type: sum
+    sql: (${irs_990_2012.profndraising}/2)*${irs_990_2012.netincsales} ;;
+    value_format: "#,##0.00;(#,##0.00)"
+  }
+  measure: calc_netinc_sales_number {
+    type: number
+    sql: (${irs_990_2012.profndraising}/2)*${irs_990_2012.netincsales} ;;
+    value_format: "#,##0.00;(#,##0.00)"
+  }
 }
