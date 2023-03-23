@@ -209,8 +209,7 @@ view: irs_990_2012 {
   dimension: profndraising {
     type: number
     description: "Professional fundraising fees"
-    sql: ${TABLE}.profndraising
-    value_format: "#,##0.00;(#,##0.00)";;
+    sql: ${TABLE}.profndraising;;
   }
 
   dimension: retainedearnend {
