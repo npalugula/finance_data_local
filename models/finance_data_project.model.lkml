@@ -7,7 +7,7 @@ datagroup: finance_data_project_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
 }
-
+#adding test comment
 persist_with: finance_data_project_default_datagroup
 
 explore: connection_reg_r3 {}
