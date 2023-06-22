@@ -1,5 +1,5 @@
 view: cfips_location {
- sql_table_name:'finance_data.cfips_location'
+ sql_table_name: `finance_data.cfips_location`
       ;;
 
 
