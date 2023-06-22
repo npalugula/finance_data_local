@@ -11,6 +11,7 @@ datagroup: finance_data_project_default_datagroup {
 persist_with: finance_data_project_default_datagroup
 
 explore: connection_reg_r3 {}
+explore: cfips_location {}
 
 explore: irs_990_2016 {}
 
