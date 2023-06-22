@@ -37,4 +37,10 @@ view: cfips_location {
   set: detail {
     fields: [cfips, name, lng, lat, location]
   }
+
+  measure: is_cfips_over_50000 {
+    type: string
+    sql: case  when ${TABLE}.cfips > 50000 then "is above 5000" else "is below 50000" end ;;
+  }
+
 }
